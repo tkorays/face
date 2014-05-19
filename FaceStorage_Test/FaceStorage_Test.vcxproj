@@ -82,6 +82,7 @@
     <ClCompile Include="..\ext\tinyxml\tinyxml.cpp" />
     <ClCompile Include="..\ext\tinyxml\tinyxmlerror.cpp" />
     <ClCompile Include="..\ext\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\ext\tinyxml\tinystr.h" />

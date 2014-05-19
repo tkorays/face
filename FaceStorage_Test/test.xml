@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<faces>
+    <face id="1" name="xujian">
+        <img>1.jpg</img>
+        <img>2.jpg</img>
+        <img>3.jpg</img>
+    </face>
+    <face id="2" name="xuzhibo">
+        <img>1.jpg</img>
+        <img>2.jpg</img>
+        <img>3.jpg</img>
+    </face>
+    <face id="3" name="lingyongqing">
+        <img>1.jpg</img>
+        <img>2.jpg</img>
+        <img>3.jpg</img>
+    </face>
+</faces>

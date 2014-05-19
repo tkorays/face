@@ -11,9 +11,8 @@ class Face{
 private:
 	int id;
 	string name;
-	vector<string> images;
 public:
-	size_t size;
+	vector<string> images;
 	Face();
 	int getId();
 	void setId(int id_);
@@ -28,15 +27,17 @@ public:
 class FaceStorage{
 private:
 	string file;
-	vector<Face> faces;
 public:
+	vector<Face> faces;
+	size_t size();
 	bool load(const string filename);
 	bool save(const string filename);
 	Face getFaceById(int id);
 	Face getFaceByName(string name);
 	vector<Face> getAllFaces();
+	string getNameById(int id);
 	bool operator<<(Face face);
-
+	bool operator>>(vector<Face>& faces_);
 };
 
 #include "FaceStorage_impl.h"
