@@ -104,9 +104,11 @@ bool FaceStorage::save(const string filename) {
 	doc->Clear(); // free memory 
 	return status;
 }
+// TODO: do not know it's necessery
 Face FaceStorage::getFaceById(int id){
 	return Face();
 }
+// TODO: do not know it's necessery
 Face FaceStorage::getFaceByName(string name){
 	return Face();
 }
