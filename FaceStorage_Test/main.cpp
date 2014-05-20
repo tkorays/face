@@ -1,4 +1,5 @@
 #include "../face/FaceStorage.h"
+#include "../face/FaceRecog.h"
 
 #include <iostream>
 using namespace std;
@@ -37,6 +38,17 @@ int read_test() {
 	}
 	cout << fs.getNameById(2) << endl;
 	return 0;
+}
+void fr_test() {
+	FaceRecog fr;
+
+	CvFrAdapter cvfr;
+	cvfr.setFaceStorage("test.xml");
+
+	// 当然可以直接调用cvfr的各种函数，为了能扩展，所以采用这种适配器方式
+	fr.setFrClass(&cvfr);
+	fr.train();
+	fr.pridect(Mat());
 }
 int main() {
 	read_test();

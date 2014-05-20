@@ -41,6 +41,10 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(OPENCV_BIN);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(OPENCV_INCLUDE);$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENCV_LIB);$(LibraryPath)</LibraryPath>
+    <LibraryWPath>$(OPENCV_BIN);$(LibraryWPath)</LibraryWPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -87,6 +91,8 @@
   <ItemGroup>
     <ClInclude Include="..\ext\tinyxml\tinystr.h" />
     <ClInclude Include="..\ext\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\face\FaceRecog.h" />
+    <ClInclude Include="..\face\FaceRecog_impl.h" />
     <ClInclude Include="..\face\FaceStorage.h" />
     <ClInclude Include="..\face\FaceStorage_impl.h" />
   </ItemGroup>

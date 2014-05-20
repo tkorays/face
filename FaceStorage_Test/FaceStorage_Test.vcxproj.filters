@@ -44,5 +44,11 @@
     <ClInclude Include="..\face\FaceStorage_impl.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\face\FaceRecog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\face\FaceRecog_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
