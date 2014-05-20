@@ -91,10 +91,13 @@
   <ItemGroup>
     <ClInclude Include="..\ext\tinyxml\tinystr.h" />
     <ClInclude Include="..\ext\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\face\CvFrAdapter.h" />
+    <ClInclude Include="..\face\CvFrAdapter_impl.h" />
     <ClInclude Include="..\face\FaceRecog.h" />
     <ClInclude Include="..\face\FaceRecog_impl.h" />
     <ClInclude Include="..\face\FaceStorage.h" />
     <ClInclude Include="..\face\FaceStorage_impl.h" />
+    <ClInclude Include="..\face\FrAdapter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -50,5 +50,14 @@
     <ClInclude Include="..\face\FaceRecog_impl.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\face\FrAdapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\face\CvFrAdapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\face\CvFrAdapter_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
