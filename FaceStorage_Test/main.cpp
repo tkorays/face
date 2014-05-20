@@ -52,10 +52,16 @@ void fr_test() {
 
 	// 设置用于识别的类,以及做好该类的初始化
 	CvFrAdapter cvfr;
+	cvfr.load("face_hist.xml"); // 直接加载训练好的历史数据
+	fr.setFrClass(&cvfr);
+	
+	
+	/*
+	// 先训练，再预测
 	cvfr.setFaceStorage(dir+"face_list.xml");
 
 	// 当然可以直接调用cvfr的各种函数，为了能扩展，所以采用这种适配器方式
-	fr.setFrClass(&cvfr);
+	
 
 	cout << "training..." << endl;
 	bool status =  fr.train();
@@ -63,11 +69,13 @@ void fr_test() {
 		cout << "train failed!" << endl;
 		return ;
 	}
+	*/
+	//cvfr.save("face_hist.xml");
 	cout << "load img:" << dir + "xuzhibo/small/6.jpg" << endl;
 	// 识别
 	int rt = fr.pridect(imread(dir+"xuzhibo/small/6.jpg",CV_LOAD_IMAGE_GRAYSCALE));
 	// CvFrAdapter的FaceStorage是public的，可以使用其读取name
-	cout << "这个人是：" << cvfr.fs.getNameById(rt) << endl;
+	cout << "这个人是：" << cvfr.fs.getNameById(rt)<<"(加载文件法不能直接获得名字),其id是："<< rt << endl;
 }
 
 void generate_xml_file() {

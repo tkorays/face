@@ -43,13 +43,17 @@ bool CvFrAdapter::train() {
 int CvFrAdapter::pridect(Mat img) {
 	return Fr->predict(img);
 }
-void CvFrAdapter::setFaceStorage(string fn) {
+void CvFrAdapter::setFaceStorage(const string fn) {
 	face_storage_file = fn;
 }
-void CvFrAdapter::loadTrainedFile(string fn) {
+void CvFrAdapter::loadTrainedFile(const string fn) {
 	trained_file = fn;
 }
-
-
+void CvFrAdapter::save(const string fn) {
+	Fr->save(fn);
+}
+void CvFrAdapter::load(const  string fn) {
+	Fr->load(fn);
+}
 
 #endif // _TK_CVFRADAPTER_IMPL_H_

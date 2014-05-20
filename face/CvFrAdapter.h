@@ -23,8 +23,10 @@ public:
 	bool train();
 	int pridect(Mat img);
 
-	void setFaceStorage(string fn);
-	void loadTrainedFile(string fn);
+	void setFaceStorage(const string fn);
+	void loadTrainedFile(const string fn);
+	void save(const string fn);
+	void load(const string fn);
 };
 
 
