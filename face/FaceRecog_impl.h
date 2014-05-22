@@ -18,5 +18,8 @@ bool FaceRecog::train() {
 int FaceRecog::pridect(Mat img) {
 	return Fr->pridect(img);
 }
+string FaceRecog::getNameById(int id) {
+	return Fr->getNameById(id);
+}
 
 #endif // _TK_FACERECOG_IMPL_H_

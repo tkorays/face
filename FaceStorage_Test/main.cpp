@@ -75,41 +75,10 @@ void fr_test() {
 	// 识别
 	int rt = fr.pridect(imread(dir+"xuzhibo/small/6.jpg",CV_LOAD_IMAGE_GRAYSCALE));
 	// CvFrAdapter的FaceStorage是public的，可以使用其读取name
-	cout << "这个人是：" << cvfr.fs.getNameById(rt)<<"(加载文件法不能直接获得名字),其id是："<< rt << endl;
+	cout << "这个人是：" << fr.getNameById(rt)<<"(加载文件法不能直接获得名字),其id是："<< rt << endl;
 }
 
-void generate_xml_file() {
-	string dir = "E:/BigData/face_data/";
-	FaceStorage fs;
-	Face face;
-	face.addImage(dir + "xuzhibo/small/" + "1.jpg");
-	face.addImage(dir + "xuzhibo/small/" + "2.jpg");
-	face.addImage(dir + "xuzhibo/small/" + "3.jpg");
-	face.addImage(dir + "xuzhibo/small/" + "4.jpg");
-	face.addImage(dir + "xuzhibo/small/" + "5.jpg");
-	face.updata(1, "徐志博");
-	fs << face;
 
-	face.clearImages();
-	face.addImage(dir + "lyq/small/" + "1.jpg");
-	face.addImage(dir + "lyq/small/" + "2.jpg");
-	face.addImage(dir + "lyq/small/" + "3.jpg");
-	face.addImage(dir + "lyq/small/" + "4.jpg");
-	face.addImage(dir + "lyq/small/" + "5.jpg");
-	face.updata(2, "凌永清");
-	fs << face;
-
-	face.clearImages();
-	face.addImage(dir + "xujian/small/" + "1.jpg");
-	face.addImage(dir + "xujian/small/" + "2.jpg");
-	face.addImage(dir + "xujian/small/" + "3.jpg");
-	face.addImage(dir + "xujian/small/" + "4.jpg");
-	face.addImage(dir + "xujian/small/" + "5.jpg");
-	face.updata(2, "许剑");
-	fs << face;
-
-	fs.save(dir + "face_list.xml");
-}
 int main() {
 	fr_test();
 	//generate_xml_file();

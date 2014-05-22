@@ -16,12 +16,13 @@ private:
 	string face_storage_file; // 用于保存图片
 	string trained_file; // 训练好的参数
 	Ptr<FaceRecognizer> Fr;
-public:
 	FaceStorage fs;
+public:
 	CvFrAdapter();
 	void init();
 	bool train();
 	int pridect(Mat img);
+	string getNameById(int id);
 
 	void setFaceStorage(const string fn);
 	void loadTrainedFile(const string fn);

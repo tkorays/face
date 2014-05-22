@@ -55,5 +55,8 @@ void CvFrAdapter::save(const string fn) {
 void CvFrAdapter::load(const  string fn) {
 	Fr->load(fn);
 }
+string CvFrAdapter::getNameById(int id) {
+	return fs.getNameById(id);
+}
 
 #endif // _TK_CVFRADAPTER_IMPL_H_

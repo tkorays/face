@@ -18,7 +18,7 @@ public:
 	void setFrClass(FrAdapter* fr);
 	bool train();
 	int pridect(cv::Mat img);
-
+	string getNameById(int id);
 };
 
 #include "FaceRecog_impl.h"
