@@ -5,9 +5,9 @@
 #include "FrAdapter.h"
 #include "FaceStorage.h"
 
-#include <opencv2\core\core.hpp>
-#include <opencv2\highgui\highgui.hpp>
-#include <opencv2\contrib\contrib.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/contrib/contrib.hpp>
 using namespace cv;
 
 // 使用opencv的人脸识别

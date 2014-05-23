@@ -2,7 +2,7 @@
 #define _TK_FRADAPTER_H_
 #pragma once
 
-#include <opencv2\core\core.hpp>
+#include <opencv2/core/core.hpp>
 
 // ÊÊÅäÆ÷µÄ½Ó¿Ú
 class FrAdapter {

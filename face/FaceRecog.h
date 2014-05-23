@@ -5,7 +5,7 @@
 using namespace std;
 
 
-#include <opencv2\core\core.hpp>
+#include <opencv2/core/core.hpp>
 using namespace cv;
 #include "FrAdapter.h"
 
